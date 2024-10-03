@@ -1,0 +1,22 @@
+input[class="spooky-input"] {
+    border-radius: 0.5em;
+    border: 2px solid light-dark(var(--lightgray), var(--orange));
+    background-color: light-dark(var(--lightgray), var(--darkgray));
+    padding: 0.75em 1em;
+}
+
+input::placeholder {
+    color: var(--disabledbackground);
+}
+
+input[class="spooky-input"]:hover {
+    background-color: var(--lightpurple);
+}
+
+input[class="spooky-input"]:active {
+    border-radius: 0.5em;
+    border: 2px solid var(--orange);
+    outline: var(--orange);
+    background-color: light-dark(var(--lightgray), var(--darkgray));
+    padding: 0.75em 1em;
+}

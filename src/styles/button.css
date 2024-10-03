@@ -53,6 +53,52 @@
     border: 2px solid light-dark(var(--lighttext), var(--orange));
 }
 
+.spooky-button[data="skeleton"]:active {
+    background-color: light-dark(var(--darkorange), var(--darkorange));
+    color: light-dark(var(--lighttext), var(--lighttext));
+    border: 2px solid light-dark(var(--lighttext), var(--orange));
+}
+
+/* Ghost variants */
+
+.spooky-button[data="ghost"] {
+    background-color: transparent;
+    color: light-dark(var(--orange), var(--lightorange));
+    border: 2px solid transparent;
+}
+
+.spooky-button[data="ghost"]:hover {
+    background-color: transparent;
+    color: light-dark(var(--orange), var(--lightorange));
+    border: 2px solid light-dark(var(--orange), var(--orange));
+}
+
+.spooky-button[data="ghost-accent"] {
+    background-color: transparent;
+    color: light-dark(var(--purple), var(--lightpurple));
+    border: 2px solid transparent;
+}
+
+.spooky-button[data="ghost-accent"]:hover {
+    background-color: transparent;
+    color: light-dark(var(--purple), var(--lightpurple));
+    border: 2px solid light-dark(var(--purple), var(--purple));
+}
+
+/* disabled ghosts */
+.spooky-button[data="ghost"]:disabled,
+.spooky-button[data="ghost-accent"]:disabled {
+    background-color: transparent;
+    color: light-dark(var(--disabledbackground), var(--disabledbackground));
+    border: 2px solid transparent;
+}
+.spooky-button[data="ghost"]:disabled:hover,
+.spooky-button[data="ghost-accent"]:disabled:hover {
+    background-color: transparent;
+    color: light-dark(var(--disabledbackground), var(--disabledbackground));
+    border: 2px solid transparent;
+}
+
 /* generic buttons/states */
 
 .spooky-button:disabled {

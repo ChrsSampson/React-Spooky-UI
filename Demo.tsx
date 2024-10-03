@@ -22,10 +22,30 @@ function App() {
                 <Button variant="skeleton" disabled={true}>
                     Disabled
                 </Button>
+                <Button variant="ghost">Ghost</Button>
+                <Button disabled={true} variant="ghost">
+                    Disabled Ghost
+                </Button>
+                <Button variant="ghost-accent">Ghost Accent</Button>
                 <Button variant="skeleton">Skeleton</Button>
 
                 <Button variant="danger">Danger</Button>
                 <Button variant="warn">Warning</Button>
+            </div>
+            <Typography element="h3">Fonts</Typography>
+            <div style={{ display: "flex", gap: "1em", padding: "2em" }}>
+                <Typography element="h4" font="halloween">
+                    Halloween
+                </Typography>
+                <Typography element="h4" font="spooky">
+                    Spooky
+                </Typography>
+                <Typography element="h4" font="grave">
+                    Grave
+                </Typography>
+                <Typography element="h4" font="scream">
+                    Scream
+                </Typography>
             </div>
             <Typography element="h3">Typography</Typography>
             <hr />
@@ -79,6 +99,7 @@ function App() {
             <div style={{ display: "flex", gap: "1em" }}>
                 <Input value="Input" />
                 <Input value="Placeholder" />
+                <Input disabled={true} value="Disabled" />
             </div>
         </section>
     );

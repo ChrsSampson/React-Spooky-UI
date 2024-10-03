@@ -1,0 +1,64 @@
+/* wrapper */
+
+.spooky-type-container {
+    padding: 0.5em;
+}
+
+.spooky-heading {
+    /* font-family: halloween; */
+    margin: 0;
+}
+
+/* -----------Headers---------------- */
+
+/* Font switches */
+div.spooky-type-container[data="grave"] {
+    font-family: grave !important;
+}
+div.spooky-type-container[data="halloween"] {
+    font-family: halloween !important;
+}
+div.spooky-type-container[data="scream"] {
+    font-family: scream !important;
+}
+div.spooky-type-container[data="spooky"] {
+    font-family: spooky !important;
+}
+
+/* Specific selectors */
+
+.spooky-heading[data="accent"] {
+    font-family: halloween !important;
+}
+
+h1.spooky-heading {
+    font-size: 3em;
+}
+
+h2.spooky-heading {
+    font-size: 2.5em;
+}
+
+h3.spooky-heading {
+    font-size: 2em;
+}
+
+h4.spooky-heading {
+    font-size: 1.5em;
+}
+
+h5.spooky-heading {
+    font-size: 1em;
+}
+
+p.spooky-type {
+    font-size: regular;
+    line-height: 1.5em;
+    word-spacing: 10%;
+    margin: 0;
+}
+
+sub.spooky-type {
+    font-size: 0.65em;
+    padding: 0;
+}
