@@ -7,7 +7,7 @@ type ButtonProps = {
     disabled?: boolean;
     onClick?: (e: React.SyntheticEvent) => void;
     children?: React.ReactNode;
-    variant?: "submit" | "skeleton" | "accent" | "danger";
+    variant?: "submit" | "skeleton" | "accent" | "danger" | "warn";
     font?: "grave" | "halloween";
     type?: "button" | "submit";
 };

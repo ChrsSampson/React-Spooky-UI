@@ -11,10 +11,12 @@
 
 .spooky-button:hover {
     background: var(--darkorange);
+    border: 2px solid var(--darkorange);
 }
 
 .spooky-button:active {
     background: light-dark(var(--orange), var(--lightorange));
+    border: 2px solid light-dark(var(--orange), var(--lightorange));
 }
 
 /* accent button */
@@ -32,9 +34,9 @@
 }
 
 .spooky-button[data="accent"]:active {
-    background-color: light-dark(var(--purple), var(--lightpurple));
+    background-color: light-dark(var(--lightpurple), var(--purple));
     color: light-dark(var(--lighttext), var(--lighttext));
-    border: 2px solid light-dark(var(--purple), var(--lightpurple));
+    border: 2px solid light-dark(var(--lightpurple), var(--purple));
 }
 
 /* Skeleton variant */
@@ -66,6 +68,7 @@
     cursor: not-allowed;
 }
 
+/* delete/danger button */
 .spooky-button[data="danger"] {
     background-color: var(--danger);
     border: 2px solid var(--danger);
@@ -75,5 +78,30 @@
 .spooky-button[data="danger"]:hover {
     background-color: var(--dangerhover);
     border: 2px solid var(--dangerhover);
+    color: var(--darktext);
+}
+
+.spooky-button[data="danger"]:active {
+    background-color: var(--danger);
+    border: 2px solid var(--danger);
+    color: var(--darktext);
+}
+
+/* warning button */
+.spooky-button[data="warn"] {
+    background-color: var(--warn);
+    border: 2px solid var(--warn);
+    color: var(--lighttext);
+}
+
+.spooky-button[data="warn"]:hover {
+    background-color: var(--warnhover);
+    border: 2px solid var(--warnhover);
+    color: var(--darktext);
+}
+
+.spooky-button[data="warn"]:active {
+    background-color: var(--warn);
+    border: 2px solid var(--warn);
     color: var(--darktext);
 }

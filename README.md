@@ -13,6 +13,7 @@ npm i react-spooky-ui
 -   Button
 -   Typography
 -   Input
+-   Divider
 -   Select
 -   Carousel
 -   Modal

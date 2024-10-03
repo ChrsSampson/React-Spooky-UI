@@ -30,14 +30,18 @@
     --purple: #9067c6;
     --lightpurple: #8d86c9;
 
+    --lightdanger: #f14c4c;
     --danger: #d13e3e;
     --dangerhover: rgb(179, 52, 52);
+    --warn: #e7b613;
+    --warnhover: #cfa310;
 
     --disabledbackground: #a3a3a3;
 
     --darktext: #e4e4e4;
     --lighttext: rgb(41, 41, 41);
 
+    font-display: fallback;
     color-scheme: light dark;
     /* default font size */
     font-size: 18px;
