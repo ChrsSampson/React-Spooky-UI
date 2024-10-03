@@ -1,0 +1,79 @@
+.spooky-button {
+    border-radius: 0.25em;
+    color: light-dark(var(--lighttext), var(--lighttext));
+    background: light-dark(var(--lightorange), var(--orange));
+    border: 2px solid light-dark(var(--lightorange), var(--orange));
+    padding: 0.25em 1em;
+    font-size: large;
+    text-align: center;
+    font-family: grave;
+}
+
+.spooky-button:hover {
+    background: var(--darkorange);
+}
+
+.spooky-button:active {
+    background: light-dark(var(--orange), var(--lightorange));
+}
+
+/* accent button */
+
+.spooky-button[data="accent"] {
+    background-color: light-dark(var(--lightpurple), var(--purple));
+    color: light-dark(var(--lighttext), var(--darktext));
+    border: 2px solid light-dark(var(--lightpurple), var(--purple));
+}
+
+.spooky-button[data="accent"]:hover {
+    background-color: light-dark(var(--purple), var(--lightpurple));
+    color: light-dark(var(--lighttext), var(--lighttext));
+    border: 2px solid light-dark(var(--purple), var(--lightpurple));
+}
+
+.spooky-button[data="accent"]:active {
+    background-color: light-dark(var(--purple), var(--lightpurple));
+    color: light-dark(var(--lighttext), var(--lighttext));
+    border: 2px solid light-dark(var(--purple), var(--lightpurple));
+}
+
+/* Skeleton variant */
+
+.spooky-button[data="skeleton"] {
+    background-color: transparent;
+    color: light-dark(var(--lighttext), var(--lightorange));
+    border: 2px solid light-dark(var(--lighttext), var(--lightorange));
+}
+
+.spooky-button[data="skeleton"]:hover {
+    background-color: light-dark(var(--lightorange), var(--orange));
+    color: light-dark(var(--lighttext), var(--lighttext));
+    border: 2px solid light-dark(var(--lighttext), var(--orange));
+}
+
+/* generic buttons/states */
+
+.spooky-button:disabled {
+    background-color: var(--disabledbackground);
+    border: 2px solid var(--disabledbackground);
+    color: var(--darktext);
+    cursor: not-allowed;
+}
+.spooky-button:disabled:hover {
+    background-color: var(--disabledbackground);
+    border: 2px solid var(--disabledbackground);
+    color: var(--darktext);
+    cursor: not-allowed;
+}
+
+.spooky-button[data="danger"] {
+    background-color: var(--danger);
+    border: 2px solid var(--danger);
+    color: var(--lighttext);
+}
+
+.spooky-button[data="danger"]:hover {
+    background-color: var(--dangerhover);
+    border: 2px solid var(--dangerhover);
+    color: var(--darktext);
+}
