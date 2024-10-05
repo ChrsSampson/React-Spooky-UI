@@ -1,16 +1,16 @@
 {
-    "name": "spooky-ui",
-    "version": "1.0.0",
-    "main": "./dist/npm-exports.js",
+    "name": "react-spooky-ui",
+    "version": "0.1.0",
+    "main": "dist/npm-exports.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "vite",
-        "buid": "vite build"
+        "build": "vite build"
     },
     "keywords": [],
-    "author": "",
+    "author": "Chris Sampson",
     "license": "ISC",
-    "description": "",
+    "description": "A spooky themed ui kit for react",
     "devDependencies": {
         "@types/react": "^18.3.11",
         "@vitejs/plugin-react": "^4.3.2",
